@@ -14,8 +14,8 @@ class MyUser: NSObject {
     var isEmailVerified: String?
     var sendEmailVerification: String?
     
-    func init(firUser: User) {
-        self.email = firUser.email ?? "" // not exactly sure about the
+    func init(firUser: User) { //error: Keyword 'init' cannot be used as an identifier here
+        self.email = firUser.email ?? ""
         self.isEmailVerified = ""
         self.sendEmailVerification = ""
     }
