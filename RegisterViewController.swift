@@ -28,7 +28,7 @@
     }
     
     private var authUser : MyUser? {
-        return Auth.auth().currentUser // error: Cannot convert return expression of type 'User?' to return type 'MyUser?'
+        return MyUser(Auth.auth().currentUser) // error: Cannot convert return expression of type 'User?' to return type 'MyUser?' }
     }
     
     var msg = String()
